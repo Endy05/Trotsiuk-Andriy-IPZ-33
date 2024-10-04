@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Головна</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="./index.html">
-                <span>Web</span>
-                <span>Studio</span>
-            </a>
+        <a href="./index.html" class="logo">
+            <span class="span-one">Web</span>Studio
+        </a>
+        <nav class="nav">
             <ul >
                 <li>
                     <a href="./index.html">Студія</a>
@@ -24,7 +24,7 @@
                 </li>
             </ul>
         </nav>
-        <ul>
+        <ul class="contact">
             <li>
                 <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -32,12 +32,14 @@
         </ul>
     </header>
     <main>
-        <section>
-            <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-            <button type="button" aria-label="Замовити послугу">Замовити послугу</button>
+        <section class="head">
+            <div class="head-div">
+                <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+                <button type="button" aria-label="Замовити послугу" class="button">Замовити послугу</button>
+            </div>
         </section>
-        <section>
-            <div>
+        <section class="info" class="section">
+            <div class="features">
                 <ul>
                     <li>
                         <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -57,52 +59,64 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section>
             <div>
                 <h2>Чим ми займаємося</h2>
-                <img src="./images/programing/image1.png" alt="Приклад програмування 1" width="300px">
-                <img src="./images/programing/image2.png" alt="Приклад програмування 2" width="300px">
-                <img src="./images/programing/image3.png" alt="Приклад програмування 3" width="300px">
+                <div class="images">
+                    <img src="./images/programing/image1.png" alt="Приклад програмування 1" width="300px">
+                    <img src="./images/programing/image2.png" alt="Приклад програмування 2" width="300px">
+                    <img src="./images/programing/image3.png" alt="Приклад програмування 3" width="300px">  
+                </div>
             </div>
         </section>
-        <section>
+        <section class="team">
             <h2>Наша команда</h2>
-            <div>
+            <div class="cart">
                 <article>
                     <img src="./images/staff/image1.png" alt="Ігор Дем'яненко - Product Desing" width="150px">
-                    <h3>Ігор Дем'яненко</h3>
-                    <p>Product Desing</p>
+                    <div class="backdown">
+                        <h3>Ігор Дем'яненко</h3>
+                        <p>Product Desing</p>
+                    </div>
                 </article>
                 <article>
                     <img src="./images/staff/image2.png" alt="Ольга Рєпіна - Frontend Developer" width="150px">
-                    <h3>Ольга Рєпіна</h3>
-                    <p>Frontend Developer</p>
+                    <div class="backdown">
+                        <h3>Ольга Рєпіна</h3>
+                        <p>Frontend Developer</p>
+                    </div>
                 </article>
                 <article>
                     <img src="./images/staff/image3.png" alt="Микола Тарасов - Marketing" width="150px">
-                    <h3>Микола Тарасов</h3>
-                    <p>Marketing</p>
+                    <div class="backdown">
+                        <h3>Микола Тарасов</h3>
+                        <p>Marketing</p>
+                    </div>
                 </article>
                 <article>
                     <img src="./images/staff/image4.png" alt="Михайло Єрмаков - UI Designer" width="150px">
-                    <h3>Михайло Єрмаков</h3>
-                    <p>UI Designer</p>
+                    <div class="backdown">
+                        <h3>Михайло Єрмаков</h3>
+                        <p>UI Designer</p>
+                    </div>
                 </article>
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <a href="#">
-                <span>Web</span><span>Studio</span>
-            </a>
+        <div class="footer-info">
+            <div class="full-logo">
+                <a href="#" class="logo">
+                    <span>Web</span>Studio
+                </a>
+            </div>
+            <div class="footer-contact">
+                <address>
+                    <p>М.Київ, пр-т Лесі Українки, 26</p>
+                </address>
+                <p><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+                <p><a href="tel:+380961111111">+38 096 111 11 11</a></p>
+            </div>
         </div>
-        <address>
-            <p>М.Київ, пр-т Лесі Українки, 26</p>
-            <p><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-            <p><a href="tel:+380961111111">+38 096 111 11 11</a></p>
-        </address>
     </footer>
 </body>
 </html>
