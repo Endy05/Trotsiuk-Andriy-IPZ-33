@@ -15,6 +15,7 @@ header {
     height: 80px;
     align-items: center;
     padding: 0 145px;
+    border: 1px solid gainsboro;
 }
 
 header a {
@@ -271,5 +272,83 @@ footer .logo {
     flex-direction: column;
     justify-content: center;
 }
+
+.container {
+    padding: 94px 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 64px;
+}
+
+
+.container article img {
+    width: 370px;
+    height: 294px;
+}
+
+.container article {
+    border: 1px solid black;
+    width: 370px;
+    height: 404px;
+    font-family: 'Roboto';
+
+}
+
+.text-cont h3 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #212121;
+    padding: 9px 0;
+}
+
+.text-cont p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+    padding: 7px 0;
+}
+
+
+.text-cont {
+    padding: 18px;
+    justify-content: center;
+}
+
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 20px;
+    padding: 0; /* Відстань між елементами */
+}
+
+.section article {
+    background-color: #FFFFFF;
+    border: 1px solid #ccc; /* Рамка для елементів */
+    text-align: center; /* Центрування тексту */
+}
+
+.filters button, .button {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    padding: 7px 20px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0px;
+    margin: 0 8px;
+}
+
+.filters button:hover {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
 
 
