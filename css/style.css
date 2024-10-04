@@ -168,7 +168,7 @@ h2 {
     height: 294px;
 }
 
-.team {
+.section {
     padding: 94px 145px;
 }
 
@@ -282,7 +282,7 @@ footer .logo {
 .filters {
     display: flex;
     justify-content: center;
-    padding-bottom: 34px;
+    padding-bottom: 64px;
 }
 
 
@@ -324,14 +324,13 @@ footer .logo {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 колонки */
     gap: 20px;
-    padding: 10px; /* Відстань між елементами */
+    padding: 0; /* Відстань між елементами */
 }
 
 .section article {
     background-color: #FFFFFF;
     border: 1px solid #ccc; /* Рамка для елементів */
     text-align: center; /* Центрування тексту */
-    margin-top: 10px;
 }
 
 .filters button, .button {
