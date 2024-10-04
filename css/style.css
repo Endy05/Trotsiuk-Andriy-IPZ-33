@@ -324,13 +324,14 @@ footer .logo {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 колонки */
     gap: 20px;
-    padding: 0; /* Відстань між елементами */
+    padding: 10px; /* Відстань між елементами */
 }
 
 .section article {
     background-color: #FFFFFF;
     border: 1px solid #ccc; /* Рамка для елементів */
     text-align: center; /* Центрування тексту */
+    margin-top: 10px;
 }
 
 .filters button, .button {
