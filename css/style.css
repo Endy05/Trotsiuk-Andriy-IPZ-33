@@ -253,19 +253,19 @@ footer .logo {
 }
 
 
-.filters {
+.p-main .filters {
     display: flex;
     justify-content: center;
     padding-bottom: 34px;
 }
 
 
-.container article img {
+.p-main .container article img {
     width: 370px;
     height: 294px;
 }
 
-.container article {
+.p-main .container article {
     border: 1px solid black;
     width: 370px;
     height: 404px;
@@ -294,21 +294,21 @@ footer .logo {
 }
 
 
-.section {
+.p-main .section {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 колонки */
     gap: 20px;
     padding: 10px; /* Відстань між елементами */
 }
 
-.section article {
+ .p-main .section article {
     background-color: #FFFFFF;
     border: 1px solid #ccc; /* Рамка для елементів */
     text-align: center; /* Центрування тексту */
     margin-top: 10px;
 }
 
-.filters button, .button {
+.filters button {
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 500;
@@ -325,7 +325,7 @@ footer .logo {
     color: #FFFFFF;
 }
 
-main {
+.p-main {
     padding: 94px 0;
 }
 
