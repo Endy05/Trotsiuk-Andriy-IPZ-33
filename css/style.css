@@ -87,15 +87,51 @@ header a, .logo, footer a {
     color: #757575;
 }
 
+.email {
+    width: 16px;
+    height: 12px;
+}
+
+.phone {
+    width: 10px;
+    height: 16px;
+}
+
+.contact a img {
+    margin-right: 10px;
+}
+
+.contact a:hover img {
+    filter: invert(42%) sepia(100%) saturate(620%) hue-rotate(183deg) brightness(96%) contrast(92%);
+}
+
 
 .head {
     font-family: Roboto;
-    background-color: #2F303A;
     color: #FFFFFF;
     display: flex;
     text-align: center;
     justify-content: center;
     padding: 188px;
+    background-image: url('/Trotsiuk-Andriy-IPZ-33/images/bg/bg-header.svg');
+    background-size: cover; /* Або contain, щоб підлаштувати зображення під контейнер */
+    background-position: center; /* Вирівнювання фону по центру */
+    background-repeat: no-repeat; /* Щоб зображення не повторювалося */
+}
+
+.future-img {
+    display: flex;
+    background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.future-img img {
+    width: 70px;
+    height: 70px;
 }
 
 .head h1 {
@@ -151,7 +187,6 @@ header a, .logo, footer a {
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    padding-bottom: 94px;
 }
 .images img {
     width: 370px;
@@ -171,7 +206,7 @@ header a, .logo, footer a {
 }
 
 .team h2 {
-    padding-bottom: 64px;
+    padding-bottom: px;
 }
 
 .cart {
@@ -184,7 +219,6 @@ header a, .logo, footer a {
 .cart article {
     border-bottom: 1px solid #757575;
     width: 270px;
-    height: 368px;
     text-align: center;
     font-family: 'Roboto';
     background: #FFFFFF;
@@ -213,45 +247,64 @@ header a, .logo, footer a {
     padding: 20px;
 }
 
-footer {
-    font-family: Roboto;
-    background-color: #2F303A;
-    height: 251px;
-}
-
-footer .logo {
-    color: #FFFFFF;
-}
-
-.full-logo {
-    padding-bottom: 20px;
-}
-
-.footer-contact a, .footer-contact p {
-    text-decoration: none;
-    font-size: 14px;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-style: normal;
-}
-
-.footer-contact p {
-    color: #FFFFFF;
-    padding-bottom: 10px;
-}
-
-.footer-contact a {
-    color: #FFFFFF99;
-    padding-bottom: 10px;
-}
-
-.footer-info {
-    height: 100%;
+.social {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    gap: 10px; /* Відстань між іконками */
+    justify-content: center; /* Вирівнювання по центру */
+    align-items: center; /* Вирівнювання по вертикалі */
+    margin: 10px 0; /* Відступ зверху */
 }
 
+.social a {
+    display: inline-block;
+    width: 44px; /* Ширина іконки */
+    height: 44px; /* Висота іконки */
+    border-radius: 50%; /* Закруглені кути для круглої форми */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a img {
+    width: 20px; 
+    height: 20px;
+}
+
+.social a:hover {
+    background-color: #007acc; /* Зміна кольору фону при наведенні */
+    opacity: 0.8; /* Прозорість при наведенні */
+}
+
+.social a:hover img {
+    filter: brightness(0) invert(1);
+}
+
+
+.regular-customer h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.regular-customer-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.regular-customer-img img:hover {
+    border: 1px solid #2196F3;
+    filter: invert(42%) sepia(100%) saturate(620%) hue-rotate(183deg) brightness(96%) contrast(92%);
+}
+
+.regular-customer-img img {
+    width: 106px;
+    height: 60px;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 
 .p-main .filters {
     display: flex;
@@ -330,3 +383,90 @@ footer .logo {
 }
 
 
+footer {
+    font-family: Roboto;
+    background-color: #2F303A;
+    height: 211px;
+    padding: 20px 0;
+}
+
+footer .logo {
+    color: #FFFFFF;
+}
+
+.full-logo {
+    padding-bottom: 20px;
+}
+
+.footer-contact a, .footer-contact p {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-contact p {
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.footer-contact a {
+    color: #FFFFFF99;
+    padding-bottom: 10px;
+}
+
+.footer-info {
+    height: 100%;
+    display: flex;
+    flex-direction: row; /* Зміна на горизонтальне вирівнювання */
+    align-items: center; /* Вирівнювання по вертикалі */
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.f-social {
+    margin-left: 100px;
+}
+
+.f-social h3 {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.f-social-img {
+    margin-left: 100px;
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    margin: 30px 0;
+}
+
+.f-social-img a {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #474b58;
+}
+
+.f-social-img img {
+    filter: brightness(0) invert(1);
+}
+
+.f-social-img a:hover {
+    background-color: #2196F3;
+}
+
+
+
+/* #2196F3 */
