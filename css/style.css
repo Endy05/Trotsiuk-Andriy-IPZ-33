@@ -31,6 +31,7 @@ header .container {
     height: 80px;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 header ul {
@@ -105,18 +106,42 @@ header a, .logo, footer a {
     filter: invert(42%) sepia(100%) saturate(620%) hue-rotate(183deg) brightness(96%) contrast(92%);
 }
 
-
 .head {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif; 
     color: #FFFFFF;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    justify-content: center;
     padding: 188px;
-    background-image: url('/Trotsiuk-Andriy-IPZ-33/images/bg/bg-header.svg');
-    background-size: cover; /* Або contain, щоб підлаштувати зображення під контейнер */
-    background-position: center; /* Вирівнювання фону по центру */
-    background-repeat: no-repeat; /* Щоб зображення не повторювалося */
+    background-image: url('/images/bg/bg-header.svg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.head h1 {
+    font-size: 44px;
+    font-weight: 900;
+    padding: 0 240px; 
+}
+
+.button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    font-weight: 700;
+    margin: 34px 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.button:hover {
+    background-color: #1976D2; 
 }
 
 .future-img {
@@ -132,24 +157,6 @@ header a, .logo, footer a {
 .future-img img {
     width: 70px;
     height: 70px;
-}
-
-.head h1 {
-    font-size: 44px;
-    font-weight: 900;
-    padding: 0 240px;
-}
-
-.button {
-    background-color: #2196F3;
-    color: #FFFFFF;
-    border: 0;
-    border-radius: 4px;
-    width: 200px;
-    height: 50px;
-    padding: 10px;
-    font-weight: 700;
-    margin: 34px 0;
 }
 
 .features {
@@ -191,6 +198,33 @@ header a, .logo, footer a {
 .images img {
     width: 370px;
     height: 294px;
+}
+
+.our-work {
+    position: relative;
+}
+
+.our-work img {
+    width: 100%;
+    display: block;
+}
+
+.our-work h3 {
+    position: absolute;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #2F303ACC;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    opacity: 0.8;
+    bottom: 0px;
+
 }
 
 .images-h2, .team h2 {
@@ -249,17 +283,17 @@ header a, .logo, footer a {
 
 .social {
     display: flex;
-    gap: 10px; /* Відстань між іконками */
-    justify-content: center; /* Вирівнювання по центру */
-    align-items: center; /* Вирівнювання по вертикалі */
-    margin: 10px 0; /* Відступ зверху */
+    gap: 10px; 
+    justify-content: center; 
+    align-items: center;
+    margin: 10px 0; 
 }
 
 .social a {
     display: inline-block;
-    width: 44px; /* Ширина іконки */
-    height: 44px; /* Висота іконки */
-    border-radius: 50%; /* Закруглені кути для круглої форми */
+    width: 44px; 
+    height: 44px; 
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,6 +325,7 @@ header a, .logo, footer a {
 .regular-customer-img {
     display: flex;
     justify-content: space-between;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customer-img img:hover {
@@ -343,7 +378,9 @@ header a, .logo, footer a {
 
 .text-cont {
     padding: 18px;
+    padding-left: 25px;
     justify-content: center;
+    text-align: left;
 }
 
 
@@ -470,3 +507,33 @@ footer .logo {
 
 
 /* #2196F3 */
+
+.nav {
+    position: relative;
+}
+
+.nav a {
+    position: relative;
+    color: #000; /* Колір тексту за замовчуванням */
+    transition: color 0.3s ease; /* Додаємо перехід для кольору тексту */
+}
+
+.nav a.active {
+    color: #2196F3;
+}
+
+.nav li.active a::after {
+    content: '';
+    position: absolute;
+    bottom: -32px; /* Відступ від тексту */
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #2196F3; /* Колір підкреслення */
+    border-radius: 2px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav li:not(.active) a:hover::after {
+    left: 0;
+}
