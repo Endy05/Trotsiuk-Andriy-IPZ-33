@@ -630,4 +630,199 @@ footer .logo {
     transform: scale(1); /* Масштабування при появі */
     opacity: 1;
   }
+
+
+
+/* Бекдроп */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
   
+  /* Модальне вікно */
+.modal {
+    position: relative;
+    max-width: 448px;
+    width: 90%;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    z-index: 1001;
+    transform: scale(0.8);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    color: #212121;
+    text-align: left;
+    font-family: Roboto;
+    justify-content: center;
+    height: 541px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container img {
+    position: absolute;
+    top: 16px;
+    left: 10px; /* Відстань від лівого краю контейнера */
+    width: 18px; /* Ширина зображення */
+    height: 18px; /* Висота зображення */
+}
+
+#name, #email, #phone {
+    padding-left: 35px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.input-container input:focus, #message:focus {
+   border: 1px solid #2196F3;
+   outline: none;
+}
+
+.custom-link {
+    color: #2196F3;
+}
+
+  .modal h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .modal label {
+    font-size: 12px;
+    color: #757575;
+  }
+  
+  /* Закриття модального вікна */
+  .modal__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Форма заявки */
+  .request-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .request-form label {
+    margin-top: 10px;
+  }
+  
+  .request-form input,
+  .request-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+.request-form textarea {
+    resize: none;
+}
+  
+  .request-form input::placeholder,
+  .request-form textarea::placeholder {
+    color: #999;
+  }
+  
+  .request-form button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.request-form img {
+    width: 18px;
+    height: 18px;
+}
+
+#check-box {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 400;
+}
+  
+#message {
+    height: 120px;
+}
+
+.button-send {
+    text-align: center;
+}
+
+.mailing {
+    font-family: Roboto;
+    margin-left: 130px;
+}
+
+.f-mailing {
+    font-family: Roboto;
+    display: flex;
+}
+
+.mailing h3 {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.mailing button {
+    display: flex;
+    align-items: center; 
+    border: none; 
+    background-color: #2196F3; 
+    color: #FFFFFF; 
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+
+.send-icon {
+    margin-left: 8px; 
+    width: 20px; 
+    height: 20px; 
+}
+
+
+.f-email {
+    width: 358px;
+    height: 50px;
+    background-color: #2F303A;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+
