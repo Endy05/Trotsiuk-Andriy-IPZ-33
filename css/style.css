@@ -114,7 +114,7 @@ header a, .logo, footer a {
     align-items: center;
     text-align: center;
     padding: 188px;
-    background-image: url('/images/bg/bg-header.svg');
+    background-image: url('../images/bg/bg-header.svg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
