@@ -1,0 +1,12 @@
+@use '/sass/utills/variables';
+
+@mixin center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin transition($property, $duration: 250ms, $timing: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition: $property $duration $timing;
+  }
+  
