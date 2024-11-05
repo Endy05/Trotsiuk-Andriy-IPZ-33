@@ -1,0 +1,7 @@
+@use './base/defaults';
+@use './utills/variables';
+@use './components/header'; 
+@use './components/main';
+@use './components/footer';
+
+@import './components/sections/portfolio';
